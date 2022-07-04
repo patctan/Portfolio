@@ -1,0 +1,72 @@
+header {
+    background-color:green;
+    font-size:large;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: left;
+}
+
+body {
+    background-color: silver;
+}
+
+h1 {
+    display:inline-block;
+}
+
+#LinkAlign {
+    text-align: right;
+}
+
+.link {
+    font-family:'Times New Roman', Times, serif;
+    font-size:larger;
+    color:white;
+    padding: 10px;
+}
+
+
+.NavAndContact {
+    display: inline;
+    color:white;
+    font-size:large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#ProfilePic {
+    float: left;
+}
+
+p {
+    font-size:large;
+}
+
+li {
+    list-style-type: none;
+}
+
+#FirstProject {
+    
+}
+h2, h3, h4 {
+    font-size:large;
+
+}
+.flex-container {
+    display: flex;
+    background-color: cornflowerblue;
+    flex-direction: column;
+    width: 75%;
+    height: 50%;
+    flex-wrap:wrap;
+    flex: 0 2 200px;
+}
+
+
+.Scroll {
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: green;
+}
