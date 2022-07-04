@@ -5,6 +5,7 @@
         <title>Patrick Tan's Portfolio</title>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
@@ -13,13 +14,13 @@
             <h1>Patrick Tan</h1>
             <div id="LinkAlign">
                 <ul>
-                    <li class="Nav">
+                    <li class="NavContact">
                         <a href="#AboutMe" class="link" >About Me</a>
                     </li>
-                    <li class="Nav">
+                    <li class="NavContact">
                         <a href="#Projects" class="link">Projects</a>
                     </li>
-                    <li class="Nav">
+                    <li class="NavContact">
                         <a href="#ContactMe" class="link">Contact Me</a>
                     </li>
                 </ul>
@@ -27,7 +28,7 @@
         </header>
 
         <section>
-            <h2>About Me</h2>
+            <h2 id="AboutMe">About Me</h2>
             <img id=ProfilePic src="Museum_Pic.jpg" alt="Picture of Patrick">
             <p>Patrick is an aspiring web developer, and is currently enrolled in UT Austin's Online Coding Bootcamp.
                 They have experience with listening to and meeting clients' needs, and is interested in learning foreign languages.
@@ -38,33 +39,39 @@
         <br><br><br><br><br><br><br>
 
 
-        <main>
-            <h3>Projects</h3>
+        <main">
+            <h3 id="Projects">Projects</h3>
             <div class="BigProject">
                     <a href="https://github.com/patctan"> <img src="Project_pic.webp" id="FirstProject" alt= "Project 1"></a>
+                    <div class="MainCenter">Coming Soon!</div>
             </div>
             <div class="SmallProject">
                 <div class="LaterProject">
                     <a href="https://github.com/patctan"> <img src="Project_pic2.jpg" alt= "Project 2"></a>
+                    <div class="Center">Coming Soon!</div>
                 </div>
                 <div class="LaterProject">
                     <a href="https://github.com/patctan"> <img src="Project_pic3.jpg"alt= "Project 3"></a>
+                    <div class="Center">Coming Soon!</div>
                 </div>
                 <div class="LaterProject">
                     <a href="https://github.com/patctan"> <img src="Project_pic4.jpg" alt= "Project 4"></a>
+                    <div class="Center">Coming Soon!</div>
                 </div>
                 <div class="LaterProject">
                     <a href="https://github.com/patctan"> <img src="Project_pic5.jpg" alt= "Project 5"></a>
+                    <div class="Center">Coming Soon!</div>
                 </div>
             </div>
+            
         </main>
 
         <footer>
-            <h4>Contact Me</h4>
+            <h4 id="ContactMe">Contact Me</h4>
             <ul>
-                <li class="Contact">(409)719-6718</li>
-                <li class="Contact"> <a href= mailto:patrickchristophertan@gmail.com class="link">patrickchristophertan@gmail.com</a></li>
-                <li class="Contact"> <a href="https://github.com/patctan" class="link">GitHub</a></li>
+                <li class="NavContact">(409)719-6718</li>
+                <li class="NavContact"> <a href= mailto:patrickchristophertan@gmail.com class="link">patrickchristophertan@gmail.com</a></li>
+                <li class="NavContact"> <a href="https://github.com/patctan" class="link">GitHub</a></li>
             </ul>
         </footer>
     </body>
