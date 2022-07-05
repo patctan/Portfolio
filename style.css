@@ -1,17 +1,23 @@
+/*Any changes made here will apply to the corresponding variable
+in the rest of the sheet*/
 :root {
     --white: #ffffff;
     --black: #000000;
     --green: #008000;
 }
 
+/*Makes it to where the page will scroll instead of jump to the
+intended section*/
 html {
     scroll-behavior: smooth;
 }
 
+/*Determines the background color of the page*/
 body {
     background-color: silver;
 }
 
+/*Determines the background color, text color, font, and alignment of the header*/
 header {
     background-color: var(--green);
     font-size:large;
@@ -20,19 +26,24 @@ header {
     text-align: left;
 }
 
-
+/*Determines how "Patrick Tan" will be displayed in the header*/
 h1 {
     display:inline-block;
 }
 
+/*Determines the alignment of the Navigation bar*/
 #LinkAlign {
     text-align: right;
 }
 
+/*Determines how the items in the Navigation Bar and Contact Me
+section are listed*/
 li {
     list-style-type: none;
 }
 
+/*Determines how the items in the Navigation Bar and Contact Me
+section are displayed*/
 .NavContact {
     display: inline;
     color: var(--white);
@@ -40,6 +51,8 @@ li {
     font-family:'Times New Roman', Times, serif;
 }
 
+/*Determines the size, font, and color of the links in the Navigation
+bar and Contact Me sections*/
 .link {
     font-family:'Times New Roman', Times, serif;
     font-size:larger;
@@ -48,27 +61,33 @@ li {
     text-decoration:none;
 }
 
+/*Determines the dimensions of the profile picture*/
 #ProfilePic {
     width: 300px;
     height: 200px;
 }
 
+/*Determines the appearance and the alignment of the headings*/
 h2, h3 {
     font-size:40px;
     color:black;
     text-align: left;
 }
 
+/*Determines the size of the font in paragraphs*/
 p {
-    font-size:large;
+    font-size:30px;
 }
 
+/*Determines where the image will appear on the page*/
 .BigProject {
 
     position: relative;
     left:25%;
 }
 
+/*Determines where the text accompanying the image in the div
+will be displayed*/
 .MainCenter {
     position:relative;
     width: 50%;
@@ -78,6 +97,13 @@ p {
 
 }
 
+/*Determines the dimensions of the image*/
+#FirstProject {
+    width:50%;
+    height:50%;
+}
+
+/*Determines how the images will be displayed on the page*/
 .SmallProject {
     display:flex;
     flex: 0 0 25%;
@@ -89,17 +115,16 @@ p {
     border-width: 5px;
 }
 
-#FirstProject {
-    width:50%;
-    height:50%;
-}
-
+/*Determines the appearance of the elements and where they
+will be displayed*/
 .LaterProject {
     flex: 1 0 0;
     text-align:center;
     padding: 20px;
 } 
 
+/*Determines the dimensions of the images, as well as their
+padding*/
 .LaterProject img {
     width: 70%;
     height: 70%;
@@ -107,32 +132,37 @@ p {
     padding-top: 30px;
 }
 
+/*Determines the appearance and location of the text*/
 .Center {
     width:100%;
     text-align: center;
     font-size: larger;
-    color:black;
+    color: var(--black);
 }
 
+/*Determines the appearance and alignment of the header*/
 h4 {
     font-size:40px;
     color: var(--white);
     text-align:left;
 }
 
+/*Determines the background color of the footer*/
 footer {
     background-color: var(--green);
 }
 
+/*Determines the position of the list in the footer*/
 footer ul {
    position:relative;
    left: 30%;
    right: 30%;
 }
 
+/*Determines how the elements will appear when the size
+of the screen changes*/
 @media screen and (max-width: 900px) {
     .SmallProject, .Nav {
         flex-direction:column;
-    }
-    
+    }   
 }
