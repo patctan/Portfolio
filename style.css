@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: silver;
+}
+
 header {
     background-color:green;
     font-size:large;
@@ -10,9 +14,6 @@ header {
     text-align: left;
 }
 
-body {
-    background-color: silver;
-}
 
 h1 {
     display:inline-block;
@@ -20,6 +21,17 @@ h1 {
 
 #LinkAlign {
     text-align: right;
+}
+
+li {
+    list-style-type: none;
+}
+
+.NavContact {
+    display: inline;
+    color:white;
+    font-size:large;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .link {
@@ -30,37 +42,48 @@ h1 {
     text-decoration:none;
 }
 
-
-.NavContact {
-    display: inline;
-    color:white;
-    font-size:large;
-    font-family:'Times New Roman', Times, serif;
-}
-
 #ProfilePic {
-    float: left;
     width: 300px;
     height: 200px;
+}
+
+h2, h3 {
+    font-size:40px;
+    color:black;
+    text-align: left;
 }
 
 p {
     font-size:large;
 }
 
-li {
-    list-style-type: none;
+.BigProject {
+
+    position: relative;
+    left:25%;
 }
 
-
-
-.Center {
-    width:100%;
+.MainCenter {
+    position:relative;
+    width: 50%;
     text-align: center;
     font-size: larger;
-    color:white;
+    color:black;
+
 }
- #FirstProject {
+
+.SmallProject {
+    display:flex;
+    flex: 0 0 25%;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    border-style:solid;
+    padding: 10px;
+    border-width: 5px;
+}
+
+#FirstProject {
     width:50%;
     height:50%;
 }
@@ -77,10 +100,12 @@ li {
     max-width:100%;
     padding-top: 30px;
 }
-h2, h3 {
-    font-size:40px;
+
+.Center {
+    width:100%;
+    text-align: center;
+    font-size: larger;
     color:black;
-    text-align: left;
 }
 
 h4 {
@@ -89,82 +114,19 @@ h4 {
     text-align:left;
 }
 
-
-
-.BigProject {
-
-    position: relative;
-    left:25%;
-}
-
-.MainCenter {
-    position:relative;
-    width: 50%;
-    text-align: center;
-    font-size: larger;
-    color:white;
-
-}
-/* .SmallProject {
-    flex: 1 0 50%;
-    flex-direction:row;
-    text-align:center;
-    margin: 5px;
-    padding: 5px;
-    border: 5px solid black;
-    flex-wrap:wrap;
-    width:75%;
-} */
-
-.SmallProject {
-    display:flex;
-    flex: 0 0 25%;
-    flex-wrap: wrap;
-    width: 100%;
-    flex-direction: row;
-    border-style:solid;
-    padding: 10px;
-    border-width: 5px;
-}
-
-
-
-@media screen and (max-width: 900px) {
-    .SmallProject, .Nav {
-        flex-direction:column;
-    }
-    
-}
- /*.flex-container {
-    display: flex;
-    background-color: cornflowerblue;
-    flex-direction: column;
-    width: 75%;
-    height: 50%;
-    flex-wrap:wrap;
-    flex: 0 2 200px;
-} */
-
-
-/* .flex-container > li {
-    float:left;
-} */
-
-
-.Scroll {
-    scroll-behavior: smooth;
-}
-
 footer {
     background-color: green;
-}
-
-.Contact {
-    display:inline;
 }
 
 footer ul {
    position:relative;
    left: 30%;
    right: 30%;
+}
+
+@media screen and (max-width: 900px) {
+    .SmallProject, .Nav {
+        flex-direction:column;
+    }
+    
 }
